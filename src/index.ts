@@ -1449,3 +1449,15 @@ export type {
   FreezeHistoryEntry,
   UnfreezeHistoryEntry,
 } from "./types/invoiceHistory.js";
+
+// Template management
+export {
+  saveTemplate,
+  createFromTemplate,
+  deleteTemplate,
+  getTemplate,
+  listTemplates,
+  TemplateNotFoundError,
+  TemplateAccessDeniedError,
+} from "./templates.js";
+export type { InvoiceTemplate, CreateFromTemplateParams, SaveTemplateParams } from "./types/templates.js";
