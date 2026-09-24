@@ -1427,3 +1427,7 @@ export type {
   SubmitTransactionOptions,
   SubmitServer,
 } from "./transaction/submit.js";
+
+// Request queue with priority lanes
+export { RequestQueue } from "./requestQueue.js";
+export type { PriorityLane, QueuedRequest, QueueStats } from "./requestQueue.js";
