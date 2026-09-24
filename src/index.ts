@@ -1431,3 +1431,21 @@ export type {
 // Request queue with priority lanes
 export { RequestQueue } from "./requestQueue.js";
 export type { PriorityLane, QueuedRequest, QueueStats } from "./requestQueue.js";
+
+// Invoice history retrieval and parsing
+export { getInvoiceHistory, getHistoryPage, parseHistoryEvent } from "./invoiceHistory.js";
+export type {
+  HistoryEntry,
+  HistoryEventType,
+  HistoryPage,
+  HistoryPageOptions,
+  PaymentHistoryEntry,
+  ReleaseHistoryEntry,
+  RefundHistoryEntry,
+  NoteHistoryEntry,
+  PauseHistoryEntry,
+  ResumeHistoryEntry,
+  CancelHistoryEntry,
+  FreezeHistoryEntry,
+  UnfreezeHistoryEntry,
+} from "./types/invoiceHistory.js";
